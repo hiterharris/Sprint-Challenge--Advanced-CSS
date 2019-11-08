@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F1F1F1;
+}
+nav h1 {
+  font-size: 36px;
+  margin-top: 1%;
+}
+nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+nav .nav-menu p {
+  margin: 1% 3%;
+  font-size: 24px;
+}
+nav .nav-menu a {
+  margin: 1% 3%;
+  font-size: 12px;
+  text-decoration: none;
+  width: 5%;
+  color: #5E6164;
+}
+@media (max-width: 500px) {
+  nav .nav-menu p {
+    font-size: 14px;
+  }
+  nav .nav-menu a {
+    width: 10%;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    justify-content: center;
+  }
+  .home .space-images img {
+    width: 90%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+    margin: 4%;
+  }
+  .home .walk .walk-text {
+    width: 95%;
+    margin: auto;
+  }
+  .home .walk .walk-text .btn {
+    background-color: #24293B;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+.sign-in {
+  height: 1000px;
+}
+.sign-in .mobile-menu {
+  display: none;
+}
+.sign-in nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sign-in .content {
+  background-image: url('../img/earth.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-in .content input {
+  height: 40px;
+  width: 300px;
+  margin: 1%;
+  border-radius: 6px;
+  border: none;
+  padding-left: 1%;
+}
+.sign-in .content button {
+  background-color: #22283A;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
+.sign-in .content a {
+  font-size: 14px;
+  padding: 0.5%;
+}
+.sign-in .content h3 {
+  margin: 1%;
+  color: white;
+}
+@media (max-width: 500px) {
+  .sign-in nav {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .sign-in nav .nav-logo {
+    margin-left: 15%;
+  }
+  .sign-in nav .nav-menu {
+    display: none;
+  }
+  .sign-in nav .mobile-menu {
+    display: flex;
+    width: 10%;
+  }
+  .sign-in .content input {
+    margin: 2%;
+  }
+  .sign-in .content button {
+    margin: 2%;
+  }
+}

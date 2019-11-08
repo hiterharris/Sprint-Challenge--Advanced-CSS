@@ -1,0 +1,75 @@
+.sign-in {
+    height: 1000px;
+
+    .mobile-menu {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .content {
+        background-image: url('../img/earth.jpg');
+        background-size: cover;
+        height: 100vh;
+        color: white;
+
+        .flex(center, center, column);
+
+        input {
+            height: 40px;
+            width: 300px;
+            margin: 1%;
+            border-radius: 6px;
+            border: none;
+            padding-left: 1%;
+        }
+
+        button {
+            .btn(@btn-bg-color, 200px, 50px, 24px, white, 6px);
+            border: none;
+        }
+
+        a {
+            font-size: 14px;
+            padding: .5%;
+        }
+
+        h3 {
+            margin: 1%;
+            color: white;
+        }
+
+    }
+
+    @media @mobile {
+        nav {
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            .nav-logo {
+                margin-left: 15%;
+            }
+            .nav-menu {
+                display: none;
+            }
+    
+            .mobile-menu {
+                display: flex;;
+                width: 10%;
+            }
+        }
+
+
+        .content {
+            input {
+                margin: 2%;
+            }
+            button {
+                margin: 2%;
+            }
+        }
+    }
+}
