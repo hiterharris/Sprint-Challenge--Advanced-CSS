@@ -1,1 +1,45 @@
 // Navigation code here
+
+nav {
+    .flex(center, center, column);
+    background-color: @sea-shell;
+    
+    h1 {
+        font-size: 36px;
+        margin-top: 1%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #23293B;
+    }
+
+    .nav-menu {
+        .flex(center, center, row);
+        width: 100%;
+        p {
+            margin: 1% 3%;
+            font-size: 24px;
+        }
+
+        a {
+            margin: 1% 3%;
+            font-size: 12px;
+            text-decoration: none;
+            width: 5%;
+            color: #5E6164;
+        }
+    }
+
+    @media @mobile {
+        .nav-menu {
+            p {
+                font-size: 14px;
+            }
+            a {
+                width: 10%;
+            }
+        }
+    }
+  }
+  
